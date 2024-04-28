@@ -7,11 +7,19 @@
 
     <title>{{ $title ?? 'Livewire Basics' }}</title>
 
+    <link rel="stylesheet" href="/app.css">
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
 <body>
+    <nav>
+        <a href="/" @class(['current' => request()->is('/')])>Todos</a>
+        <a href="/counter" @class(['current' => request()->is('/counter')])>Counter</a>
+        <a href="/HelloWorld" @class(['HelloWorld' => request()->is('/HelloWorld')])>HelloWorld</a>
+    </nav>
+
     {{ $slot }}
 </body>
 

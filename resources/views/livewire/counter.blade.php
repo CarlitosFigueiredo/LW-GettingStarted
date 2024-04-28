@@ -1,4 +1,4 @@
-<div>
+<div class="container">
     Counter: {{ $count }}
 
     <button wire:click="increment">

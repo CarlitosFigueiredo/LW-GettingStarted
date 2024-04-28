@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/HelloWorld', HelloWorld::class);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/', Todos::class);
 Route::get('/counter', Counter::class);
-Route::get('/todos', Todos::class);
+Route::get('/HelloWorld', HelloWorld::class);

@@ -2,8 +2,10 @@
 
 namespace App\Livewire;
 
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Todos')] // Estou criando um titulo no atributo title do layout.app.
 class Todos extends Component
 {
     public $todo = '';
