@@ -1,13 +1,12 @@
 <div class="container">
-
     {{-- Por clique de botão --}}
-    <h1>Clique do botão</h1>
+    {{-- <h1>Clique do botão</h1>
     <form class="my-3">
         <input wire:model="todo" type="text" class="form-control mb-2">
         <button wire:click="add" type="button" class="btn btn-secondary btn-sm">
             Add
         </button>
-    </form>
+    </form> --}}
 
     {{-- Por submit --}}
     <h1>Submit do formulário</h1>
