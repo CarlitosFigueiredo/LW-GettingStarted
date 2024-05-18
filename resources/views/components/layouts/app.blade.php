@@ -19,6 +19,8 @@
         <a wire:navigate href="/counter" @class(['current' => request()->is('/counter')])>Counter</a>
         <a wire:navigate href="/HelloWorld" @class(['current' => request()->is('/HelloWorld')])>HelloWorld</a>
         <a wire:navigate href="/posts" @class(['current', request()->is('/posts')])>Posts</a>
+        <a wire:navigate href="/posts/create" @class(['current', request()->is('/posts/create')])>Create Post</a>
+
     </nav>
 
     {{ $slot }}
