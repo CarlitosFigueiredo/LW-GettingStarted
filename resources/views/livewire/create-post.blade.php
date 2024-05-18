@@ -5,6 +5,7 @@
         <label>
             <span>Title</span>
             <input type="text" wire:model="title">
+
             @error('title')
                 <em>{{ $message }}</em>
             @enderror
